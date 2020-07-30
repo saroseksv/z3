@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tvTable" layoutX="1.0" layoutY="2.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tcC1" prefWidth="125.0" text="C1" />
+          <TableColumn fx:id="tcC2" prefWidth="125.0" text="C2" />
+          <TableColumn fx:id="tcC3" prefWidth="125.0" text="C3" />
+          <TableColumn fx:id="tcC4" prefWidth="125.0" text="C4" />
+          <TableColumn fx:id="tcC5" prefWidth="125.0" text="C5" />
+        </columns>
+      </TableView>
+      <Button fx:id="bFill" layoutX="8.0" layoutY="212.0" mnemonicParsing="false" onAction="#bFillClick" prefHeight="37.0" prefWidth="197.0" text="Заполнить случайными числами" />
+      <Button fx:id="bProcess" layoutX="215.0" layoutY="212.0" mnemonicParsing="false" onAction="#bProcessClick" prefHeight="37.0" prefWidth="138.0" text="Выполнить задание" />
+      <Label layoutX="360.0" layoutY="211.0" text="Максимальный элемент:" />
+      <Label layoutX="360.0" layoutY="231.0" text="Минимальный элемент:" />
+      <Label fx:id="lMax" layoutX="500.0" layoutY="211.0" />
+      <Label fx:id="lMin" layoutX="500.0" layoutY="231.0" />
+      <ImageView fitHeight="1.0" fitWidth="578.0" layoutX="56.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/line.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="263.0" prefHeight="60.0" prefWidth="568.0" text="Если максимальный элемент в таблице больше минимального в 10 раз, то все нули заменить единицами, а отрицательные числа заменить на их значения по модулю." textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
